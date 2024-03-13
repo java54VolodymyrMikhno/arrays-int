@@ -20,7 +20,7 @@ int [] array = {10, 25, 30, 40, 100};
 	@Test
 	void insertNumberTest() {
 		int [] arrayExpectedLast = {10, 25, 30, 40, 100, 25};
-		int [] arrayExpectedFirst = {10, 25, 30, 40, 100};
+		int [] arrayExpectedFirst = {25, 10, 25, 30, 40, 100};
 		int [] arrayExpectedMiddle = {10, 25, 30, 25, 40, 100};
 		int [] arrayActualLast =insertNumber(array, 5, 25);
 		int [] arrayActualFirst =insertNumber(array, 0, 25);
