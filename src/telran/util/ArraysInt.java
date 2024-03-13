@@ -21,9 +21,13 @@ public class ArraysInt {
 		return copy;
 	}
 	public static	int[] insertSorted(int[] sortedArray, int number) {
-		//TODO
-		//insert number into sorted array with keeping the sorted order
-		//apply method arraycopy of class Arrays
-		return null;
+		int[] copy =Arrays.copyOf(sortedArray,sortedArray.length+1);
+		int index = 0;
+		while(index < sortedArray.length && sortedArray[index] < number) {
+			index++;
+		}
+		System.arraycopy(sortedArray,index, copy,index+1,sortedArray.length-index);
+		copy[index] =number ;
+		return copy;
 	}
 }
