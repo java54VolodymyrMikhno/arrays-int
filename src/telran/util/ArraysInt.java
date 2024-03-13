@@ -16,9 +16,9 @@ public class ArraysInt {
 		return copy;
 	}
 	public static	int[] removeNumber(int[] array, int index) {
-		//TODO
-		//apply method arraycopy of class System
-		return null;
+		int[] copy =Arrays.copyOf(array,array.length-1);
+		System.arraycopy(array,index+1, copy,index, copy.length-index);
+		return copy;
 	}
 	public static	int[] insertSorted(int[] sortedArray, int number) {
 		//TODO
