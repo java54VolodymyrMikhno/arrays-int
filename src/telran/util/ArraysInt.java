@@ -10,9 +10,10 @@ public class ArraysInt {
 		return copy;
 	}
 	public static	int[] insertNumber(int[] array,  int index, int number) {
-		//TODO
-		//apply method arraycopy of class System
-		return null;
+		int[] copy =Arrays.copyOf(array,array.length+1);
+		System.arraycopy(copy,index, copy,index +1, copy.length-index - 1);
+		copy[index] = number;
+		return copy;
 	}
 	public static	int[] removeNumber(int[] array, int index) {
 		//TODO
