@@ -78,5 +78,6 @@ int [] array = {10, 25, 30, 40, 100};
 		assertEquals(0,Arrays.binarySearch(array, 10));
 		assertEquals(4 ,Arrays.binarySearch(array,100));
 		assertEquals(-6 ,Arrays.binarySearch(array,1000));
+		assertEquals(-1 ,Arrays.binarySearch(array,5));
 	}
 }
